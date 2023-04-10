@@ -1,0 +1,6 @@
+From: <test.12@test12.org>
+To: <test123.12test@testdomain.extension>
+Date: 
+Subject: Just a random subject, just to test the server
+This is the body of the email, I can write anything here but it's too much work thinking of something good.
+I just used the same emails because there's no point thinking of more.

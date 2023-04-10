@@ -1,0 +1,15 @@
+EHLO 127.0.0.1
+AUTH CRAM-MD5
+*
+MAIL FROM:<test.12@test12.org>
+NOOP
+RCPT TO:<test123.12test@testdomain.extension>
+NOOP
+NOOP
+DATA
+Date: Some random date, obviously in an incorrect format. This won't be stored in the file.
+Subject: Just a random subject, just to test the server
+This is the body of the email, I can write anything here but it's too much work thinking of something good.
+I just used the same emails because there's no point thinking of more.
+.
+QUIT

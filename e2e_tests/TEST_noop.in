@@ -1,0 +1,25 @@
+MAIL FROM:<test.12@test12.org>
+NOOP
+EHLO 127.0.0.1
+NOOP
+MAIL FROM:<test.12-@test12-.org>
+NOOP
+MAIL FROM:<test.12@test12.org>
+NOOP
+MAIL FROM:<test.12@test12.org>
+NOOP
+RSET
+NOOP
+MAIL FROM:<test.12@test12.org>
+NOOP
+RCPT TO:<test123.12test@testdomain.extension>
+NOOP
+DATA
+Date: Mon, 14 Sep 1987 23:07:00 +1000
+Subject: Just a random subject, just to test the server
+NOOP
+This is the body of the email, I can write anything here but it's too much work thinking of something good.
+NOOP
+This time, the date should be stored since it's valid. Also, noop should not do anything but be stored in the mail file.
+.
+QUIT

@@ -1,0 +1,17 @@
+MAIL FROM:<test.12@test12.org>
+EHLO 127.0.0.1
+MAIL FROM:<test.12-@test12-.org>
+MAIL FROM:<test.12@test12.org>
+MAIL FROM:<test.12@test12.org>
+RSET
+MAIL FROM:<test.12@test12.org>
+RCPT TO:<test123.12test@testdomain.extension>
+DATA
+QUIT
+Date: Some random date, obviously in an incorrect format. This won't be stored in the file.
+QUIT
+Subject: Just a random subject, just to test the server
+QUIT
+This is the body of the email, I can write anything here but it's too much work thinking of something good.
+.
+QUIT
